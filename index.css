@@ -35,57 +35,16 @@ i{
     background-color: white; 
     border-bottom: 3px solid #e7ecef;
     display:flex;
-    justify-content:center;
-    align-items:center;
-
 }
 
-.nav-links{
-    width: 410px;
-    padding:5px 5px;
-    margin: 15px auto;
-    border-radius:5px;
-    display:flex;
-}
-
-.nav-links i{
-    padding:5px;
-    font-size: 1.23em;
-    margin-left:25px;
-    color:#CED8DF;
-}
-
-.nav-links i:hover{
-    color: #1DA1F2;
-}
-
-.nav-input input{
-    margin-left:70px;
-    border-radius:5rem;
-    background-color:#e7ecef;
-    padding:0 13px;
-    width:175px;
-    height:27px;
-    border:none;
-}
-
-.profile-info-pic{
-    border: 1px solid lightgray;
-    border-radius: 50%;
-    width: 30px;
-}
-
-.nav-user-info{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:10px;
-    margin:0 15px;
-}
-
-.twitter-logo{
+.nav-logo{
     width:50px;
-    padding:0 25px;
+    height:50px;
+    margin:10px 0 0 13px;
+}
+
+.nav > h1{
+    padding: 13px;
 }
 
 /* layout */
@@ -106,7 +65,6 @@ main{
     padding:0 0 15px 0;
 
 }
-
 
 .tweet-input-area {
     display: flex;
@@ -221,6 +179,4 @@ textarea{
     margin: 0 0 15px 70px;
  
 }
-
-
 
