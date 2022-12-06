@@ -19,6 +19,15 @@ document.addEventListener('click', function(e){
     else if(e.target.dataset.edit){
         handleTweetEdit(e.target.dataset.edit)
     }
+    else if(e.target.id === 'main-modal-tweet-btn'){
+        handleModalTweetBtnClick()
+    }
+    else if(e.target.id === 'modal-close'){
+        handleModalCloseClick()
+    }
+    else if(e.target.id === 'inside-modal-tweet-btn'){
+        handleInsideTweetBtnClick()
+    }
    console.log(e)
 })
  
@@ -78,6 +87,27 @@ function handleTweetBtnClick(){
    // document.body.classList.toggle("dark-mode");
 }
 
+function handleInsideTweetBtnClick(){
+    const modalTextInput = document.getElementById('modal-tweet-input')
+
+    if(modalTextInput.value){
+        tweetsData.unshift({
+            handle: `@test`,
+            profilePic: `images/no-picture.jpg`,
+            likes: 0,
+            retweets: 0,
+            tweetText: modalTextInput.value,
+            replies: [],
+            isLiked: false,
+            isRetweeted: false,
+            uuid: uuidv4()
+        })
+    render()
+    modalTextInput.value = ''
+    document.getElementById('myModal').style.display = "none"
+    }
+}
+
 function handleTweetEdit(tweetEdit){
     
     let targetTweetObj = tweetsData.filter(function(tweet){
@@ -90,7 +120,16 @@ function handleTweetEdit(tweetEdit){
     render()
 }
 
+function handleModalTweetBtnClick(){
+    console.log("clicked")
+    document.getElementById('myModal').style.display = "inline"
+    
 
+}
+
+function handleModalCloseClick(){
+    document.getElementById('myModal').style.display = "none"
+}
 
 function getFeedHtml(){
     let feedHtml = ``
@@ -162,7 +201,7 @@ function getFeedHtml(){
     </div>
     <div class="hidden" id="replies-${tweet.uuid}">
         ${repliesHtml}
-    </div>   
+    </div> 
 </div>
 `
    })
