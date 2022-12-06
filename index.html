@@ -1,51 +1,90 @@
 <html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Twimba</title>
+    <link rel="icon" type="image/x-icon" href="/images/twitter.png" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-	<!-- CSS -->
-	<link rel="stylesheet" href="index.css">
-	<!-- Font Awesome CDN -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
-	<title>Twimba</title>
-	<link rel="icon" type="image/x-icon" href="/images/twitter.png">
-</head>
 
+  <div class="nav">
+    <img class="nav-logo" src="images/twitter.png" alt="twitter-logo" />
+    <h1>Twimba</h1>
+  </div>
 
-<div class="nav">
-	<img class="nav-logo" src="images/twitter.png" alt="twitter-logo">
-	<h1>Twimba</h1>
-</div>
+  <body>
+    <main>
+      <div class="home">
+        <h1>Home</h1>
+      </div>
 
-<body> 	
-	<main>
-		<div class="home">
-			<h1>Home</h1>	
-		</div>
-		<div class="tweet-input-area">
-			<img src="images/no-picture.jpg" class="profile-pic">
-			<textarea placeholder="What's happening?" id="tweet-input"></textarea>		
-		</div>
-		<div class="btn-class">
-			<div class="tweet-prop-icons">
-				<i class="fa-regular fa-image"></i>
-				<i class="fa-regular fa-face-smile"></i>
-				<i class="fa-solid fa-calendar-days"></i>
-				<i class="fa-solid fa-location-dot"></i>
-			</div>
-			<button id="tweet-btn">Tweet</button>
-		</div>
+      <div class="tweet-input-area">
+        <img src="images/no-picture.jpg" class="profile-pic" />
+        <textarea placeholder="What's happening?" id="tweet-input"></textarea>
+      </div>
+
+      <div class="btn-class">
+        <div class="tweet-prop-icons">
+          <i class="fa-regular fa-image"></i>
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <button id="tweet-btn">Tweet</button>
+      </div>
+
+      <div class="feed" id="feed">
+        <!-- Tweets here!! -->
 		
-		<div class="feed" id="feed">
-			<!-- Tweets here!! -->
-		</div>
-		
-	</main>
+      </div>
+    </main>
 
-	<script src="index.js" type="module"></script>
-</body>
+ 	<!-- Modal -->
 
+    <button id="main-modal-tweet-btn" class="main-modal-tweet-btn">Tweet</button>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="modal-close" class="close">&times;</span>
+        <div class="tweet-input-area">
+          <img src="images/no-picture.jpg" class="profile-pic" />
+          <textarea placeholder="What's happening?" id="modal-tweet-input"></textarea>
+        </div>
+
+        <div class="btn-class">
+          <div class="tweet-prop-icons">
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-face-smile"></i>
+            <i class="fa-solid fa-calendar-days"></i>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <button class="inside-modal-tweet-btn" id="inside-modal-tweet-btn">Tweet</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
