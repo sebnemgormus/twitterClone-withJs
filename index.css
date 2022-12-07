@@ -29,6 +29,7 @@ i{
   color: limegreen;
 }
 
+
 /* nav */
 
 .nav{
@@ -47,6 +48,7 @@ i{
     padding: 13px;
 }
 
+
 /* layout */
 
 main{
@@ -54,7 +56,7 @@ main{
     padding:10px 45px;
     margin: 15px auto;
     background-color:white;
-    border-radius:5px;
+    border-radius:15px;
 }
 
 .home{
@@ -63,7 +65,6 @@ main{
     justify-content:space-between;
     align-items:center;
     padding:0 0 15px 0;
-
 }
 
 .tweet-input-area {
@@ -96,19 +97,17 @@ textarea{
     border: none;
     color: white;
     padding: 8px 5px;
-    border-radius: 20px;
+    border-radius: 15px;
     width: 50%; 
     cursor: pointer;
     font-size: 16px;
     font-weight: 300;
-
 }
 
 .btn-class .tweet-prop-icons i {
     color: #1DA1F2;
     margin:8px 0 6px 10px;
 }
-
 
 /* tweet */
 
@@ -192,8 +191,7 @@ textarea{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
   }
 
   .inside-modal-tweet-btn{
@@ -201,47 +199,49 @@ textarea{
     border: none;
     color: white;
     padding: 8px 5px;
-    border-radius: 20px;
+    border-radius: 15px;
+    width: 50%; 
     cursor: pointer;
     font-size: 16px;
     font-weight: 300;
     display: block;
-    width: 50%; 
     margin-left:auto;
     margin-right:auto;
   }
 
-  
   /* modal content/box */
 
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 30%; 
     height: 20%;
-    border-radius:15px;
-    
+    border-radius:15px;   
   }
 
   .main-modal-tweet-btn{
     background-color: #1DA1F2;
     border: none;
     color: white;
-    padding: 16px 5px;
-    border-radius: 20px;
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     margin-left: 80%;
     margin-bottom:1%;
-    width: 8%; 
+    padding:18px;
 
   }
 
+  .main-modal-tweet-btn > i{
+    margin:3px;
+    color:white;
+  }
+
   .main-modal-tweet-btn:hover{
-    background-color: #65bff6;
+    box-shadow: 0px 0px 20px 1px #adb5bd;
   }
   
   /* close button */
@@ -259,7 +259,3 @@ textarea{
     text-decoration: none;
     cursor: pointer;
   }
-
-
-
-  
