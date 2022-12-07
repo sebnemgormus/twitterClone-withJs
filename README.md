@@ -8,6 +8,9 @@ Written using HTML, CSS, and JavaScript for the exercise at the Frontend Develop
 ## The App
 ![Twimba - Google Chrome 2022-12-06 15-28-25_Trim](https://user-images.githubusercontent.com/63050857/205913380-0273a6e1-e28c-448d-bb11-9c9cc986dbdf.gif)
 
+## The Modal Part
+![Twimba - Google Chrome 2022-12-07 20-58-43_Trim](https://user-images.githubusercontent.com/63050857/206260570-87ed31b3-169f-4de1-a0ef-b83b7ea05d31.gif)
+
 
 ## Deployment
 
